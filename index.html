@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <div class="bg-1 left-item item current">111</div>
+            <div class="bg-2 left-item item">222</div>
+            <div class="bg-3 left-item item">333</div>
+        </div>
+        <div class="right">
+            <div class="bg-3 right-item item">
+                <button onclick="buttonScroll(true)">top</button>
+            </div>
+            <div class="bg-2 right-item item">
+                <button onclick="buttonScroll(true)">top</button>
+                <button onclick="buttonScroll(false)">down</button>
+            </div>
+            <div class="bg-1 right-item item current">
+                <button onclick="buttonScroll(false)">down</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+* {box-sizing: border-box;}
+html, body {height: 100%; overflow: hidden;}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.left, .right {
+  position: absolute;
+  height: 100%;
+}
+
+.left-item, .right-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transition: all .6s ease-out;
+}
+
+.left {width: 30%; left: 0; top: 0;}
+.left .item {transform: translateY(-100%) translateZ(0px); border-right: 2px solid #000;}
+.right {width: 70%; left: 30%; top: 0;}
+.right .item {transform: translateY(100%) translateZ(0px);}
+.item.current {transform: translateY(0%) translateZ(0px);}
+.item.left-after {transform: translateY(100%) translateZ(0px);}
+.item.right-after {transform: translateY(-100%) translateZ(0px);}
+
+.item {height: 100%;}
+
+.bg-1 {background: #58c1d2;}
+.bg-2 {background: orange;}
+.bg-3 {background: green;}
